@@ -79,6 +79,7 @@ def main():
         (   'My Game',          'game.json',    'START',    ['END'],    [])
         ,(  'Zork I',           'zork.json',    'WHOUS',    ['NIRVA'],  [])
         ,(  'A Nightmare',      'dream.json',    'START',   ['AWAKE'],  ['END'])
+        ,(  'myGame',      'myGame.json',    'CLASSROOM',   ['SCHOOLGATE','REALITY'],  ['HEAVEN'])
     ]
 
     # Ask the player to choose a game

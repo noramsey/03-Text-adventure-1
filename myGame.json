@@ -1,0 +1,129 @@
+{
+    "verbs": [
+      { "v": "EXITS",   "map": "EXITS" },
+      { "v": "QUIT",    "map": "QUIT"  },
+      { "v": "NORTH",   "map": "NORTH" },
+      { "v": "N",       "map": "NORTH" },
+      { "v": "SOUTH",   "map": "SOUTH" },
+      { "v": "S",       "map": "SOUTH" },
+      { "v": "SWIM",    "map": "SWIM"  },
+      { "v": "S",       "map": "SWIM"  },
+      { "v": "DIVE",    "map": "DIVE"  },
+	    { "v": "UP",      "map": "UP"    },
+      { "v": "DOWN",    "map": "DOWN"  },
+	    { "v": "JUMP",    "map": "JUMP"  },
+      { "v": "NOTHING", "map": "NOTHING"}
+	  
+    ],
+
+    "rooms": {
+      "CLASSROOM": {
+        "name": "classroom",
+        "desc": "You wake up in the classroom. There is nobody but you.",
+        "exits": [
+          {
+            "verb": "UP",
+            "target": "ROOFTOP",
+            "condition": ""
+          },
+          {
+            "verb": "DOWN",
+            "target": "THEFIRSTFLOOR",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "ROOFTOP": {
+        "name": "Rooftop",
+        "desc": "Here is the Rooftop. You can hear some nosie below",
+        "exits": [
+		  {
+			"verb":"DOWN",
+			"target":"CLASSROOM",
+			"condition": ""
+		  },
+		  {
+			"verb": "JUMP",
+			"target": "HEAVEN",
+			"condition": ""
+		  }
+        ],
+        "inventory": []
+      },
+	    "THEFIRSTFLOOR": {
+        "name": "The First Floor",
+        "desc": "Here is the First Floor. You see many zombies are chasing and eating students.",
+        "exits": [
+		  {
+			"verb":"NORTH",
+			"target":"SCHOOLGATE",
+			"condition": ""
+		  },
+		  {
+			"verb": "SOUTH",
+			"target": "PLAYGROUND",
+			"condition": ""
+		  }
+        ],
+        "inventory": []
+      },
+	    "PLAYGROUND": {
+        "name": "Playground",
+        "desc": "Here is the playground. Students used to play sports here, but there's a crowd of zombies. Oh no! They see you.",
+        "exits": [
+		  {
+			"verb":"NOTHING",
+			"target":"HEAVEN",
+			"condition": ""
+		  },
+		  {
+			"verb": "NORTH",
+			"target": "THEFIRSTFLOOR",
+			"condition": ""
+		  },
+		  {
+			"verb":"SOUTH",
+			"target":"LAKE",
+			"condition":""
+		  }
+        ],
+        "inventory": []
+      },
+	    "LAKE": {
+        "name": "Lake",
+        "desc": "You see a lake. What do you want to do next?",
+        "exits": [
+		  {
+			"verb":"DIVE",
+			"target":"REALITY",
+			"condition": ""
+		  },
+		  {
+			"verb": "SWIM",
+			"target": "HEAVEN",
+			"condition": ""
+		  }
+        ],
+        "inventory": []
+      },
+	    "REALITY": {
+        "name": "Reality",
+        "desc": "It is just a dream..... The class was over 15 minutes ago. Seems I am the last person in the classroom...",
+        "exits": [],
+        "inventory": []
+      },
+	    "SCHOOLGATE": {
+        "name": "SCHOOLGATE",
+        "desc": "Here is the school gate. You run out of the school and you were saved by a kindful driver.",
+        "exits": [],
+        "inventory": []
+      },
+	    "HEAVEN": {
+        "name": "Heaven",
+        "desc": "Welcome to Heaven. You must did something wrong just now....",
+        "exits": [],
+        "inventory": []
+      }
+    }
+  }
