@@ -1,0 +1,39 @@
+Name: Noah Ramsey
+Date: 9/24/2019
+Project: Text Adventure
+Peer's repository:  https://github.com/AjsonZ/03-Text-adventure-1.git
+
+
+
+What is something you learned by reviewing your peer's project?
+
+You can edit your game engine so it takes you to multiple different games using Json indexing! 
+ 
+
+What is something you saw in your peer's project that you would like to apply to your own programming projects?
+
+I liked this game respending to more commands than just the cardinal directions.
+
+What suggestions would you have for your peer to improve his/her code?
+
+ I think more clarity could be given as to what command are actually usable within the game, such as a list of options.
+
+What could have been clearer or better commented?
+
+The game select screen, which goes by number and game title. 
+
+Was there anything in the code that was confusing to you? If so, what?
+
+The game select screen, which I feel should have accepted numbers and strings(Titles)
+
+Does the repository contain an appropriate LICENSE?
+
+Sure does! 
+
+What is something he/she could add to the README.md to make it more descriptive?
+
+A more thoughtful guide on how to proceed through the game, so I could measure intended design vs mistakes. 
+
+Pay a compliment to your peer based on the quality of his/her code.
+
+It's much better than my lazy game and very creative! 
